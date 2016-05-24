@@ -12,14 +12,14 @@ publish.dependsOn build
 
 ext{
 	moduleName="harbor-base";	
-    publishUserName = "nexusoper1"
-    publishUserPassword = "oper123"
-    publishURL="http://223.202.119.155:18081/nexus/content/repositories/snapshots/"
+    publishUserName = "theie"
+    publishUserPassword = "theie123"
+    publishURL="http://123.57.17.96:8081/nexus/content/repositories/snapshots/"
     builtBy="gradle 2.5"
 }
 
 repositories {
-    maven{ url "http://223.202.119.155:18081/nexus/content/groups/public/"  }
+    maven{ url "http://123.57.17.96:8081/nexus/content/groups/public/"  }
 }
 
  sourceSets {
