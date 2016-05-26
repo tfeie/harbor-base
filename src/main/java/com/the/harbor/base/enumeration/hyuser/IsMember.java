@@ -2,7 +2,7 @@ package com.the.harbor.base.enumeration.hyuser;
 
 import com.the.harbor.base.enumeration.base.Behaviour;
 
-public enum IsMemeber implements Behaviour {
+public enum IsMember implements Behaviour {
 
     YES("Y", "会员"),
 
@@ -12,7 +12,7 @@ public enum IsMemeber implements Behaviour {
 
     private String desc;
 
-    private IsMemeber(String value, String desc) {
+    private IsMember(String value, String desc) {
         this.value = value;
         this.desc = desc;
     }
