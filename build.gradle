@@ -32,6 +32,11 @@ repositories {
     }
 }
 
+dependencies {
+    compile "javax.validation:validation-api:1.0.0.GA"
+	compile "org.hibernate:hibernate-validator:4.2.0.Final"
+}
+
 jar {
     baseName moduleName
     version version
@@ -61,7 +66,22 @@ publishing {
 	      artifact(sourceJar) {
 	        classifier "sources"
 	      }
-	      pom.withXml {}
+	      pom.withXml {
+	      	asNode().children().last() + {
+                delegate.dependencies {
+                    delegate.dependency {
+                        delegate.groupId("javax.validation")
+                        delegate.artifactId("validation-api")
+                        delegate.version("1.0.0.GA")
+                    }
+                    delegate.dependency {
+                        delegate.groupId("org.hibernate")
+                        delegate.artifactId("hibernate-validator")
+                        delegate.version("4.2.0.Final")
+                    }
+                }
+            }
+	      }
 	    }
     }
     repositories {
