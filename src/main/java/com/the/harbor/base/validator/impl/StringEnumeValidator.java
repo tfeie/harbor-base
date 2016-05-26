@@ -6,6 +6,7 @@ import java.util.List;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+import com.the.harbor.base.enumeration.base.Behaviour;
 import com.the.harbor.base.validator.StringEnum;
 
 public class StringEnumeValidator implements ConstraintValidator<StringEnum, String> {
@@ -26,17 +27,15 @@ public class StringEnumeValidator implements ConstraintValidator<StringEnum, Str
     @Override
     public void initialize(StringEnum stringEnum) {
         valueList = new ArrayList<String>();
-        Class<? extends Enum<?>> enumClass = stringEnum.enumClazz();
+        Class<? extends Behaviour> enumClass = stringEnum.enumClazz();
         if (enumClass == null) {
             throw new IllegalArgumentException("The enumClass parameter cannot be null.");
         }
 
-        @SuppressWarnings("rawtypes")
-        Enum[] enumValArr = enumClass.getEnumConstants();
+        Behaviour[] enumValArr = enumClass.getEnumConstants();
 
-        for (@SuppressWarnings("rawtypes")
-        Enum enumVal : enumValArr) {
-            valueList.add(enumVal.toString().toUpperCase());
+        for (Behaviour enumVal : enumValArr) {
+            valueList.add(enumVal.getValue().toUpperCase());
         }
 
     }

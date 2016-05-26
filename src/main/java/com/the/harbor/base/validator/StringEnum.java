@@ -10,6 +10,7 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 import javax.validation.ReportAsSingleViolation;
 
+import com.the.harbor.base.enumeration.base.Behaviour;
 import com.the.harbor.base.validator.impl.StringEnumeValidator;
 
 @Documented
@@ -18,7 +19,7 @@ import com.the.harbor.base.validator.impl.StringEnumeValidator;
 @Target(ElementType.FIELD)
 @ReportAsSingleViolation
 public @interface StringEnum {
-    Class<? extends Enum<?>> enumClazz();
+    Class<? extends Behaviour> enumClazz();
 
     String message() default "Value is not valid";
 
