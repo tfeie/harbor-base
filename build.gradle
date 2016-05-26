@@ -43,46 +43,32 @@ jar {
 	manifest {
         attributes 'packageName': baseName, 'Built-By': builtBy,'create-date': new Date().format('yyyy-MM-dd HH:mm:ss'), 'Manifest-Version': version
     }
-}
-
-task sourceJar(type: Jar) {
-  baseName moduleName
-  version version
-  classifier "sources"
-  from sourceSets.main.allJava
-  manifest {
-        attributes 'packageName': baseName, 'Built-By': builtBy,'create-date': new Date().format('yyyy-MM-dd HH:mm:ss'), 'Manifest-Version': version
-  }
-}
+} 
 
 publishing {
     publications {
-        
-        publishJar(MavenPublication) {
-	      from components.java
-	      groupId group
-          artifactId moduleName
-          version version
-	      artifact(sourceJar) {
-	        classifier "sources"
-	      }
-	      pom.withXml {
-	      	asNode().children().last() + {
-                delegate.dependencies {
-                    delegate.dependency {
-                        delegate.groupId("javax.validation")
-                        delegate.artifactId("validation-api")
-                        delegate.version("1.0.0.GA")
-                    }
-                    delegate.dependency {
-                        delegate.groupId("org.hibernate")
-                        delegate.artifactId("hibernate-validator")
-                        delegate.version("4.2.0.Final")
+        publishing.publications.create("${moduleName}", MavenPublication) {
+            groupId group
+            artifactId moduleName
+            version version
+            artifact jar
+            pom.withXml {
+                asNode().children().last() + {
+                    delegate.dependencies {
+                        delegate.dependency {
+                            delegate.groupId("javax.validation")
+                            delegate.artifactId("validation-api")
+                            delegate.version("1.0.0.GA")
+                        }
+                        delegate.dependency {
+                            delegate.groupId("org.hibernate")
+                            delegate.artifactId("hibernate-validator")
+                            delegate.version("4.2.0.Final")
+                        }
                     }
                 }
             }
-	      }
-	    }
+        }
     }
     repositories {
         maven {
