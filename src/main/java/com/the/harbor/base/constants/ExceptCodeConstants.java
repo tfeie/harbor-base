@@ -3,7 +3,7 @@ package com.the.harbor.base.constants;
 public final class ExceptCodeConstants {
     private ExceptCodeConstants() {
     }
-
+  
     // 处理成功[业务处理成功]
     public static final String SUCCESS = "000000";
 
