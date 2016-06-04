@@ -4,11 +4,11 @@ import com.the.harbor.base.enumeration.base.Behaviour;
 
 public enum Sex implements Behaviour {
 
-    FEMALE("F", "女"),
+    FEMALE("2", "女"),
 
-    MALE("M", "男"),
+    MALE("1", "男"),
 
-    OTHER("OTHER", "其它");
+    OTHER("0", "其它");
 
     private String value;
 
