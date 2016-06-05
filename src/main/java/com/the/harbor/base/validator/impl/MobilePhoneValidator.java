@@ -16,7 +16,7 @@ import com.the.harbor.base.validator.MobilePhone;
  */
 public class MobilePhoneValidator implements ConstraintValidator<MobilePhone, String> {
 
-    private static final String MOBILEPHONE_REGEX = "^((13[0-9])|(14[0-9])|(15[^4,\\D])|(18[0-9])|(17[0-9]))\\d{8}$";
+    private static final String MOBILEPHONE_REGEX = "^((13[0-9])|(14[0-9])|(15[0-9])|(18[0-9])|(17[0-9]))\\d{8}$";
 
     private java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(MOBILEPHONE_REGEX,
             java.util.regex.Pattern.CASE_INSENSITIVE);
