@@ -6,15 +6,20 @@ import com.the.harbor.base.vo.ResponseHeader;
 
 public final class ResponseBuilder {
 
-    private ResponseBuilder() {
+	private ResponseBuilder() {
 
-    }
+	}
 
-    public static Response buildSuccessResponse(String message) {
-        ResponseHeader responseHeader = new ResponseHeader(ExceptCodeConstants.SUCCESS, message);
-        Response r = new Response();
-        r.setResponseHeader(responseHeader);
-        return r;
-    }
+	public static Response buildSuccessResponse(String message) {
+		ResponseHeader responseHeader = buildSuccessResponseHeader(message);
+		Response r = new Response();
+		r.setResponseHeader(responseHeader);
+		return r;
+	}
+
+	public static ResponseHeader buildSuccessResponseHeader(String message) {
+		ResponseHeader responseHeader = new ResponseHeader(ExceptCodeConstants.SUCCESS, message);
+		return responseHeader;
+	}
 
 }
