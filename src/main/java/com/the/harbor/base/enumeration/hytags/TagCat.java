@@ -4,7 +4,7 @@ import com.the.harbor.base.enumeration.base.Behaviour;
 
 public enum TagCat implements Behaviour {
 
-	USER("10", "系统内置标签"),
+	SYSTEM("10", "系统内置标签"),
 
 	CUSTOMIZED("11", "自定义标签");
 
