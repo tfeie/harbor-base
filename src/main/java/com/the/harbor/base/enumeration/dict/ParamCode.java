@@ -9,6 +9,8 @@ public enum ParamCode implements Behaviour {
 	SEX("SEX", "性别"),
 
 	ABROAD_COUNTRY("ABROAD_COUNTRY", "留学国家"),
+	
+	ABROAD_UNIVERSITY("ABROAD_UNIVERSITY", "留学大学"),
 
 	AT_COUNTRY("AT_COUNTRY", "当前所在国家"),
 
