@@ -1,4 +1,4 @@
-package com.the.harbor.base.enumeration.hytags;
+package com.the.harbor.base.enumeration.common;
 
 import com.the.harbor.base.enumeration.base.Behaviour;
 

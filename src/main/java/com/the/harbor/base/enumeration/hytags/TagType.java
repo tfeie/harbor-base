@@ -12,28 +12,28 @@ public enum TagType implements Behaviour {
 
 	GO("40", "适用G&O的标签不细分类");
 
-	private String value;
+    private String value;
 
-	private String desc;
+    private String desc;
 
-	private TagType(String value, String desc) {
-		this.value = value;
-		this.desc = desc;
-	}
+    private TagType(String value, String desc) {
+        this.value = value;
+        this.desc = desc;
+    }
 
-	@Override
-	public String toString() {
-		return this.value + " is " + this.desc;
-	}
+    @Override
+    public String toString() {
+        return this.value + " is " + this.desc;
+    }
 
-	@Override
-	public String getValue() {
-		return this.value;
-	}
+    @Override
+    public String getValue() {
+        return this.value;
+    }
 
-	@Override
-	public String getDesc() {
-		return this.desc;
-	}
+    @Override
+    public String getDesc() {
+        return this.desc;
+    }
 
 }
