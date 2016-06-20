@@ -6,7 +6,9 @@ public enum BusiType implements Behaviour {
 
 	PAY_FOR_MEMBER("100000", "购买会员"),
 
-	PAY_FOR_HAIBI("100001", "购买海币");
+	PAY_FOR_HAIBI("100001", "购买海币"),
+	
+	PAY_FOR_GO("100002", "支付GO活动费用");
 
 	private String value;
 
