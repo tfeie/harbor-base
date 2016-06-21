@@ -12,6 +12,7 @@ public class BusinessException extends GenericException {
 		super(errorMessage);
 		this.errorCode = errorCode;
 		this.errorMessage = errorMessage;
+		this.title = title;
 	}
 
 	public BusinessException(String errorCode, String errorMessage, String title, String url) {
