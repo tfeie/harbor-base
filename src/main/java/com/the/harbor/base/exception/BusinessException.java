@@ -4,37 +4,31 @@ public class BusinessException extends GenericException {
 
 	private static final long serialVersionUID = 1L;
 
-	private String title;
+	private boolean needjump;
 
 	private String url;
 
-	public BusinessException(String errorCode, String errorMessage) {
+	public BusinessException(String errorMessage) {
 		super(errorMessage);
-		this.errorCode = errorCode;
+		this.errorCode = "BUSI_CODE_0000";
 		this.errorMessage = errorMessage;
+		this.needjump = false;
 	}
 
-	public BusinessException(String errorCode, String errorMessage, String title) {
+	public BusinessException(String errorMessage, boolean needjump, String url) {
 		super(errorMessage);
-		this.errorCode = errorCode;
+		this.errorCode = "BUSI_CODE_0000";
 		this.errorMessage = errorMessage;
-		this.title = title;
-	}
-
-	public BusinessException(String errorCode, String errorMessage, String title, String url) {
-		super(errorMessage);
-		this.errorCode = errorCode;
-		this.errorMessage = errorMessage;
-		this.title = title;
+		this.needjump = needjump;
 		this.url = url;
 	}
 
-	public String getTitle() {
-		return title;
+	public boolean isNeedjump() {
+		return needjump;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public void setNeedjump(boolean needjump) {
+		this.needjump = needjump;
 	}
 
 	public String getUrl() {
