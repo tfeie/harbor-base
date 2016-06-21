@@ -7,6 +7,13 @@ public class BusinessException extends GenericException {
 	private boolean needjump;
 
 	private String url;
+	
+	public BusinessException(String errorCode,String errorMessage) {
+		super(errorMessage);
+		this.errorCode = errorCode;
+		this.errorMessage = errorMessage;
+		this.needjump = false;
+	}
 
 	public BusinessException(String errorMessage) {
 		super(errorMessage);
