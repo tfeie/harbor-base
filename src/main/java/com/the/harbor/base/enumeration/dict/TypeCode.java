@@ -4,30 +4,34 @@ import com.the.harbor.base.enumeration.base.Behaviour;
 
 public enum TypeCode implements Behaviour {
 
-	HY_USER("HY_USER", "HY_USER");
+	HY_USER("HY_USER", "HY_USER"),
 
-    private String value;
+	HY_GO("HY_GO", "HY_GO"),
 
-    private String desc;
+	HY_GO_ORDER("HY_GO_ORDER", "HY_GO_ORDER");
 
-    private TypeCode(String value, String desc) {
-        this.value = value;
-        this.desc = desc;
-    }
+	private String value;
 
-    @Override
-    public String toString() {
-        return this.value + " is " + this.desc;
-    }
+	private String desc;
 
-    @Override
-    public String getValue() {
-        return this.value;
-    }
+	private TypeCode(String value, String desc) {
+		this.value = value;
+		this.desc = desc;
+	}
 
-    @Override
-    public String getDesc() {
-        return this.desc;
-    }
+	@Override
+	public String toString() {
+		return this.value + " is " + this.desc;
+	}
+
+	@Override
+	public String getValue() {
+		return this.value;
+	}
+
+	@Override
+	public String getDesc() {
+		return this.desc;
+	}
 
 }

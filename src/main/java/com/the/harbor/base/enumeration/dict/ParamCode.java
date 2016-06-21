@@ -26,7 +26,11 @@ public enum ParamCode implements Behaviour {
 
 	USER_STATUS("USER_STATUS", "用户状态"),
 
-	MEMBER_LEVEL("MEMBER_LEVEL", "会员等级");
+	MEMBER_LEVEL("MEMBER_LEVEL", "会员等级"),
+	
+	GO_TYPE("GO_TYPE", "GO类型"),
+	
+	ORDER_STATUS("ORDER_STATUS", "GO预约订单状态");
 
 	private String value;
 
