@@ -30,6 +30,10 @@ public enum ParamCode implements Behaviour {
 	
 	GO_TYPE("GO_TYPE", "GO类型"),
 	
+	PAY_MODE("PAY_MODE", "GO付费方式"),
+	
+	ORG_MODE("ORG_MODE", "GO活动组织形式"),
+	
 	ORDER_STATUS("ORDER_STATUS", "GO预约订单状态");
 
 	private String value;
