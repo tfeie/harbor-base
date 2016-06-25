@@ -34,7 +34,9 @@ public enum ParamCode implements Behaviour {
 	
 	ORG_MODE("ORG_MODE", "GO活动组织形式"),
 	
-	ORDER_STATUS("ORDER_STATUS", "GO预约订单状态");
+	ORDER_STATUS("ORDER_STATUS", "GO预约订单状态"),
+	
+	INDEX_SILDER("INDEX_SILDER","首页轮播图片地址");
 
 	private String value;
 
