@@ -8,6 +8,8 @@ public enum TypeCode implements Behaviour {
 
 	HY_GO("HY_GO", "HY_GO"),
 
+	HY_BE("HY_BE", "HY_BE"),
+
 	HY_GO_ORDER("HY_GO_ORDER", "HY_GO_ORDER");
 
 	private String value;
