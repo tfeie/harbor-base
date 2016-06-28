@@ -5,6 +5,8 @@ import com.the.harbor.base.enumeration.base.Behaviour;
 public enum MQType implements Behaviour {
 	
 	MQ_HY_USER_FANS("MQ_HY_USER_FANS", "用户互粉"),
+	
+	MQ_HY_USER_FRIEND("MQ_HY_USER_FRIEND", "用户加好友"),
 
 	MQ_HY_BE_LIKES("MQ_HY_BE_LIKES", "B&E点赞消息"),
 
