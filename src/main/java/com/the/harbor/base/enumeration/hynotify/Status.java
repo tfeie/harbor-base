@@ -8,7 +8,7 @@ public enum Status implements Behaviour {
 
 	READ("read", "已读"),
 
-	DELETE("delete", "已经删除");
+	DELETE("deleted", "已经删除");
 
 	private String value;
 
