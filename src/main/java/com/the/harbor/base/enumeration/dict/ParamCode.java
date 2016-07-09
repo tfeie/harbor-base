@@ -36,6 +36,10 @@ public enum ParamCode implements Behaviour {
 	
 	ORDER_STATUS("ORDER_STATUS", "GO预约订单状态"),
 	
+	HAIBEI_PRICES("HAIBEI_PRICES", "海贝可售卖价格"),
+	
+	MEMBER_PRICES("MEMBER_PRICES", "会员可售卖价格"),
+	
 	INDEX_SILDER("INDEX_SILDER","首页轮播图片地址");
 
 	private String value;
