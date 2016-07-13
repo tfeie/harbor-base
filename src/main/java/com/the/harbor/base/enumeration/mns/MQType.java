@@ -12,9 +12,13 @@ public enum MQType implements Behaviour {
 
 	MQ_HY_BE_LIKES("MQ_HY_BE_LIKES", "B&E点赞消息"),
 
-	MQ_HY_GO_FAVORITE("MQ_HY_GO_FAVORITE", "G&O活动搜藏消息"),
+	MQ_HY_GO_FAVORITE("MQ_HY_GO_FAVORITE", "G&O活动收藏消息"),
 
 	MQ_HY_GO_VIEWS("MQ_HY_GO_VIEWS", "G&O活动浏览消息"),
+
+	MQ_HY_BE_FAVORITE("MQ_HY_BE_FAVORITE", "BE收藏消息"),
+
+	MQ_HY_BE_VIEWS("MQ_HY_BE_VIEWS", "BE浏览消息"),
 
 	MQ_HY_BE_COMMENT("MQ_HY_BE_COMMENT", "B&E评论消息"),
 
