@@ -5,10 +5,12 @@ import com.the.harbor.base.enumeration.base.Behaviour;
 public enum AuthSts implements Behaviour {
 
 	NOT_APPLY("10", "未提交材料"),
+	
+	SUBMITTED_APPLY("11", "已经提交材料"),
 
 	AUTH_PASS("12", "认证成功"),
 
-	AUTH_FAILURE("11", "认证失败");
+	AUTH_FAILURE("13", "认证失败");
 
 	private String value;
 
