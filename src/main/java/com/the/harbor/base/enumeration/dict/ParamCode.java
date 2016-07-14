@@ -6,10 +6,12 @@ public enum ParamCode implements Behaviour {
 
 	USER_TYPE("USER_TYPE", "用户类型"),
 
+	AUTH_STS("AUTH_STS", "用户认证状态"),
+
 	SEX("SEX", "性别"),
 
 	ABROAD_COUNTRY("ABROAD_COUNTRY", "留学国家"),
-	
+
 	ABROAD_UNIVERSITY("ABROAD_UNIVERSITY", "留学大学"),
 
 	AT_COUNTRY("AT_COUNTRY", "当前所在国家"),
@@ -27,20 +29,20 @@ public enum ParamCode implements Behaviour {
 	USER_STATUS("USER_STATUS", "用户状态"),
 
 	MEMBER_LEVEL("MEMBER_LEVEL", "会员等级"),
-	
+
 	GO_TYPE("GO_TYPE", "GO类型"),
-	
+
 	PAY_MODE("PAY_MODE", "GO付费方式"),
-	
+
 	ORG_MODE("ORG_MODE", "GO活动组织形式"),
-	
+
 	ORDER_STATUS("ORDER_STATUS", "GO预约订单状态"),
-	
+
 	HAIBEI_PRICES("HAIBEI_PRICES", "海贝可售卖价格"),
-	
+
 	MEMBER_PRICES("MEMBER_PRICES", "会员可售卖价格"),
-	
-	INDEX_SILDER("INDEX_SILDER","首页轮播图片地址");
+
+	INDEX_SILDER("INDEX_SILDER", "首页轮播图片地址");
 
 	private String value;
 
