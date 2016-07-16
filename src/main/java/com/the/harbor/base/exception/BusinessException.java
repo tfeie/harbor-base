@@ -7,8 +7,8 @@ public class BusinessException extends GenericException {
 	private boolean needjump;
 
 	private String url;
-	
-	public BusinessException(String errorCode,String errorMessage) {
+
+	public BusinessException(String errorCode, String errorMessage) {
 		super(errorMessage);
 		this.errorCode = errorCode;
 		this.errorMessage = errorMessage;
@@ -25,6 +25,14 @@ public class BusinessException extends GenericException {
 	public BusinessException(String errorMessage, boolean needjump, String url) {
 		super(errorMessage);
 		this.errorCode = "BUSI_CODE_0000";
+		this.errorMessage = errorMessage;
+		this.needjump = needjump;
+		this.url = url;
+	}
+
+	public BusinessException(String errorCode, String errorMessage, boolean needjump, String url) {
+		super(errorMessage);
+		this.errorCode = errorCode;
 		this.errorMessage = errorMessage;
 		this.needjump = needjump;
 		this.url = url;
