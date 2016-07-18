@@ -10,7 +10,9 @@ public enum TagType implements Behaviour {
 
 	BE("30", "适用于B&E的标签不细分类"),
 
-	GO("40", "适用G&O的标签不细分类");
+	GROUP("40", "适用GROUP的标签不细分类"),
+	
+	ONO("50", "适用ONO的标签不细分类");
 
     private String value;
 

@@ -6,7 +6,9 @@ public enum ScopeType implements Behaviour {
 
 	USER("10", "适用用户"),
 
-	GO("11", "适用GROUP和One On One活动"),
+	GROUP("11", "适用GROUP活动"),
+	
+	ONO("13", "适用ono活动"),
 
 	BE("12", "适用BE");
 
