@@ -7,6 +7,8 @@ public enum TypeCode implements Behaviour {
 	HY_USER("HY_USER", "HY_USER"),
 
 	HY_GO("HY_GO", "HY_GO"),
+	
+	HY_GO_JOIN("HY_GO_JOIN", "HY_GO_JOIN"),
 
 	HY_BE("HY_BE", "HY_BE"),
 	
