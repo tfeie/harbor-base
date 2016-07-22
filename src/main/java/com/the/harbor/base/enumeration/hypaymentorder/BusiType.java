@@ -6,6 +6,10 @@ public enum BusiType implements Behaviour {
 
 	REWARD_HB_FOR_BE("100003", "BE打赏海贝"),
 
+	REWARD_HB_FOR_ONO("100004", "ONO打赏海贝"),
+
+	REWARD_HB_FOR_GROUP("100005", "GROUP打赏海贝"),
+
 	PAY_FOR_MEMBER("100000", "购买会员"),
 
 	PAY_FOR_HAIBI("100001", "购买海币"),
