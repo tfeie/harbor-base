@@ -41,6 +41,8 @@ public enum ParamCode implements Behaviour {
 	HAIBEI_PRICES("HAIBEI_PRICES", "海贝可售卖价格"),
 
 	MEMBER_PRICES("MEMBER_PRICES", "会员可售卖价格"),
+	
+	HELP_VALUE("HELP_VALUE", "活动是否有帮助"),
 
 	INDEX_SILDER("INDEX_SILDER", "首页轮播图片地址");
 
