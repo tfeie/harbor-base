@@ -4,6 +4,20 @@ import com.the.harbor.base.enumeration.base.Behaviour;
 
 public enum MQType implements Behaviour {
 
+	MQ_HY_BE_INDEX_BUILD("MQ_HY_BE_INDEX_BUILD", "BE索引自动构建"),
+
+	MQ_HY_BE_INDEX_COUNT_BUILD("MQ_HY_BE_INDEX_COUNT_BUILD", "BE索引统计类信息更新"),
+
+	MQ_HY_GO_INDEX_BUILD("MQ_HY_GO_INDEX_BUILD", "GO索引自动构建"),
+
+	MQ_HY_GO_INDEX_COUNT_BUILD("MQ_HY_GO_INDEX_COUNT_BUILD", "GO索引统计类信息更新"),
+
+	MQ_HY_NOTIFY("MQ_HY_NOTIFY", "消息中心消息"),
+
+	MQ_HY_SMS_RECORD("MQ_HY_SMS_RECORD", "短信发送消息记录"),
+
+	MQ_HY_USER_ASSETS_TRADE("MQ_HY_USER_ASSETS_TRADE", "用户资产交易"),
+
 	MQ_HY_GO_JOIN_CONFIRM("MQ_HY_GO_JOIN_CONFIRM", "群组活动用户报名审核"),
 
 	MQ_HY_USER_FANS("MQ_HY_USER_FANS", "用户互粉"),
