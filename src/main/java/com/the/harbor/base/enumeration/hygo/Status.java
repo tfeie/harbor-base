@@ -5,6 +5,8 @@ import com.the.harbor.base.enumeration.base.Behaviour;
 public enum Status implements Behaviour {
 
 	ING("ing", "进行中"),
+	
+	CANCEL("cancel", "撤销"),
 
 	END("end", "结束");
 
