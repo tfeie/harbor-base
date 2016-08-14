@@ -3,9 +3,9 @@ package com.the.harbor.base.enumeration.mns;
 import com.the.harbor.base.enumeration.base.Behaviour;
 
 public enum MQType implements Behaviour {
-	
+
 	MQ_HY_BE_DELETE("MQ_HY_BE_DELETE", "BE删除消息"),
-	
+
 	MQ_HY_GO_DELETE("MQ_HY_GO_DELETE", "GO删除消息"),
 
 	MQ_HY_BE_INDEX_BUILD("MQ_HY_BE_INDEX_BUILD", "BE索引自动构建"),
@@ -27,6 +27,8 @@ public enum MQType implements Behaviour {
 	MQ_HY_USER_FANS("MQ_HY_USER_FANS", "用户互粉"),
 
 	MQ_HY_USER_FRIEND("MQ_HY_USER_FRIEND", "用户加好友"),
+
+	MQ_USER_SYNC_IM("MQ_USER_SYNC_IM", "同步用户信息给OPENIM"),
 
 	MQ_HY_BE_LIKES("MQ_HY_BE_LIKES", "B&E点赞消息"),
 
