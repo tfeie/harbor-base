@@ -3,6 +3,8 @@ package com.the.harbor.base.enumeration.dict;
 import com.the.harbor.base.enumeration.base.Behaviour;
 
 public enum ParamCode implements Behaviour {
+	
+	AUTH_IDENTITY("AUTH_IDENTITY","用户认证身份"),
 
 	USER_TYPE("USER_TYPE", "用户类型"),
 
