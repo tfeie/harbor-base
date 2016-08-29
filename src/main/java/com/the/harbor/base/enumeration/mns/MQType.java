@@ -3,6 +3,10 @@ package com.the.harbor.base.enumeration.mns;
 import com.the.harbor.base.enumeration.base.Behaviour;
 
 public enum MQType implements Behaviour {
+	
+	MQ_HY_BE_NEW("MQ_HY_BE_NEW", "BE新增消息"),
+
+	MQ_HY_GO_NEW("MQ_HY_GO_NEW", "GO新增消息"),
 
 	MQ_HY_BE_DELETE("MQ_HY_BE_DELETE", "BE删除消息"),
 
