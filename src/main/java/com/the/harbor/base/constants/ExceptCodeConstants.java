@@ -13,6 +13,6 @@ public final class ExceptCodeConstants {
 	public static final String PARAM_IS_NULL = "888888";
 
 	// 参数校验失败
-	public static final String VALID_ERROR = "777777";
+	public static final String VALID_ERROR = "66666";
 
 }
